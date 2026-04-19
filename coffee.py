@@ -7,15 +7,12 @@ class Coffee:
         self.__tipo_temperatura = tipo_temperatura
         self.__precio = precio
     def info(self):
-      print(f"Nombre: {self.__nombre}")
-      print(f"Tipo de grano: {self.__tipo_grano}")
-      print(f"ID: {self.__ID}")
-      print(f"Temperatura: {self.__tipo_temperatura}")
-      print(f"precio: ${self.__precio}")
-
-
-
-
+      return f"Nombre: {self.__nombre}, Tipo de grano: {self.__tipo_grano}, ID: {self.__ID}, Temperatura: {self.__tipo_temperatura}, Precio: {self.__precio}"
+    def cambiar_temperatura(self, nueva_temp):
+         self.__tipo_temperatura = nueva_temp
+    def aplicar_descuento(self, porcentaje):
+        descuento = self.__precio * (porcentaje / 100)
+        self.__precio -= descuento
 
 
 # Getters
@@ -50,20 +47,14 @@ def set_tipo_temperatura(self, tipo_temperatura):
 def set_precio(self, precio):
        self.__precio = precio
 
-# Metodo 1
-def aplicar_descuento(self, porcentaje):
-        descuento = self.__precio * (porcentaje / 100)
-        self.__precio -= descuento
-
-# Metodo 2
-def cambiar_temperatura(self, nueva_temp):
-        self.__tipo_temperatura = nueva_temp
-        return f"La bebida ahora es {self.__tipo_temperatura}"
-
-
 
 # Prueba de clase
 
 cafe1 = Coffee("Latte", "Arabica", 101, "Caliente", 60)
-
+print("Café antes de los cambios")
+print(cafe1.info())
+print("--------------------------")
+cafe1.aplicar_descuento(10)
+cafe1.cambiar_temperatura("Frío")
+print("Café despues de los cambios")
 print(cafe1.info())
