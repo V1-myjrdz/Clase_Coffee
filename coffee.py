@@ -48,3 +48,11 @@ def aplicar_descuento(self, porcentaje):
 def cambiar_temperatura(self, nueva_temp):
         self.__tipo_temperatura = nueva_temp
         return f"La bebida ahora es {self.__tipo_temperatura}"
+
+# Metodo info
+def info(self):
+       print(f"Nombre: {self.__nombre}")
+       print(f"Tipo de grano: {self.__nombre}")
+       print(f"ID: {self.__nombre}")
+       print(f"Temperatura: {self.__nombre}")
+       print(f"precio: {self.__precio}")
