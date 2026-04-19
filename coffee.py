@@ -39,6 +39,12 @@ def set_tipo_temperatura(self, tipo_temperatura):
 def set_precio(self, precio):
        self.__precio = precio
 
+# Metodo 1
 def aplicar_descuento(self, porcentaje):
         descuento = self.__precio * (porcentaje / 100)
         self.__precio -= descuento
+
+# Metodo 2
+def cambiar_temperatura(self, nueva_temp):
+        self.__tipo_temperatura = nueva_temp
+        return f"La bebida ahora es {self.__tipo_temperatura}"
