@@ -51,6 +51,7 @@ def set_precio(self, precio):
 # Prueba de clase
 
 cafe1 = Coffee("Latte", "Arabica", 101, "Caliente", 60)
+
 print("Café antes de los cambios")
 print(cafe1.info())
 print("--------------------------")
