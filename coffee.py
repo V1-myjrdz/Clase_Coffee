@@ -6,6 +6,17 @@ class Coffee:
         self.__ID = ID
         self.__tipo_temperatura = tipo_temperatura
         self.__precio = precio
+    def info(self):
+      print(f"Nombre: {self.__nombre}")
+      print(f"Tipo de grano: {self.__tipo_grano}")
+      print(f"ID: {self.__ID}")
+      print(f"Temperatura: {self.__tipo_temperatura}")
+      print(f"precio: ${self.__precio}")
+
+
+
+
+
 
 # Getters
 def get_nombre(self):
@@ -49,10 +60,10 @@ def cambiar_temperatura(self, nueva_temp):
         self.__tipo_temperatura = nueva_temp
         return f"La bebida ahora es {self.__tipo_temperatura}"
 
-# Metodo info
-def info(self):
-       print(f"Nombre: {self.__nombre}")
-       print(f"Tipo de grano: {self.__nombre}")
-       print(f"ID: {self.__nombre}")
-       print(f"Temperatura: {self.__nombre}")
-       print(f"precio: {self.__precio}")
+
+
+# Prueba de clase
+
+cafe1 = Coffee("Latte", "Arabica", 101, "Caliente", 60)
+
+print(cafe1.info())
