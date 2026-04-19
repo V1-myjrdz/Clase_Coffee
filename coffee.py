@@ -38,3 +38,7 @@ def set_tipo_temperatura(self, tipo_temperatura):
 
 def set_precio(self, precio):
        self.__precio = precio
+
+def aplicar_descuento(self, porcentaje):
+        descuento = self.__precio * (porcentaje / 100)
+        self.__precio -= descuento
