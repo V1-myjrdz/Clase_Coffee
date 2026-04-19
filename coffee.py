@@ -24,4 +24,17 @@ def get_precio(self):
         return self.__precio
 
 # Setters
+def set_nombre(self, nombre):
+       self.__nombre = nombre
 
+def set_tipo_grano(self, tipo_grano):
+       self.__tipo_grano = tipo_grano
+
+def set_ID(self, ID):
+       self.__ID = ID
+
+def set_tipo_temperatura(self, tipo_temperatura):
+       self.__tipo_temperatura = tipo_temperatura
+
+def set_precio(self, precio):
+       self.__precio = precio
